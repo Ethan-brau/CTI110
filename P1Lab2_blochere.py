@@ -34,7 +34,7 @@ else:
 burger_total = num_burgers * burger_cost
 fry_total = num_fries * fry_cost
 print("-" * 35)
-print(num_burgers, "burger(s) \t \t \t$", burger_total)
-print(num_fries, "fries \t \t \t$", fry_total)
+print(num_burgers, "burger(s) \t \t \t$", format(burger_total,  ".2f"))
+print(num_fries, "fries \t \t \t$", format(fry_total, ".2f") )
 print("-" * 35)
-print("\t \t$", fry_total + burger_total)
+print("\t \t$", format(fry_total + burger_total, ".2f") )
