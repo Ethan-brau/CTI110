@@ -9,7 +9,28 @@ print("===\t=== Welcome to Fork! a text adventure. ===\t===")
 print('\ntype "help" at any time for help!\n')
 
 def main():
-    print("Choose Your Own Adventure")
+    print("You stand in front of an old house.")
+    choice = input()
+    if choice == "look":
+        print('you look at your surroundings.')
+        time.sleep(1.5)
+        print('behind you, your car ticks from the heat it is emitting gently in the sharp, cold air. you feel a desire to "leave".')
+        print('you are facing the front of the house, it is old, probably late 50s townhome. the white paint is peeling, revealing how cruel the years have been.')
+        print('the address on the porch support reads "6 * 6", it is impossible to read the second number as it has fallen off.')
+        print('vines and other foiage grow up the sides of the building, tearing between the wooden slat siding, shattered windows reveal other flora life, \n reching towards the light of the moon.')
+        print('the door is ajar, the scene all together sends a light chill down your spine. goosebumps set in.')
+        main()
+    elif choice == "help":
+        help()
+        print('\n \n \n')
+        main()
+    elif choice == "search":
+        print('you reluctantly search the property.')
+        time.sleep(1.5)
+        print('The steps up to the porch lead to the "front door".')
+        print('you could search the "bushes", but you really dont want to. who knows what is hiding in there.')
+        print('around the back is the "back door", it seems to be shut, but its hard to tell with the screen loosely protecting the porch from a clear view.')
+        print('there is also a "shed" out back, locked behind a sturdy, and alarmingly new looking padlock.')
     go_home()
 
 #----------------------------------------------------------------------------
@@ -24,6 +45,7 @@ def help():
     print("press enter after every choice to submit!")
     print('type "look" to look around')
     print('try "search" in some rooms to check for clues, or objects')
+    print('some items, or locations in "quotation marks" are interactable. try entering them or "go to ____" to interact')
     print('type "help" at any time to see these options again!')
 
 #-----------------------------------------------------------------------------
