@@ -14,24 +14,32 @@ def main():
     if choice == "look":
         print('you look at your surroundings.')
         time.sleep(1.5)
-        print('behind you, your car ticks from the heat it is emitting gently in the sharp, cold air. you feel a desire to "leave".')
-        print('you are facing the front of the house, it is old, probably late 50s townhome. the white paint is peeling, revealing how cruel the years have been.')
-        print('the address on the porch support reads "6 * 6", it is impossible to read the second number as it has fallen off.')
-        print('vines and other foiage grow up the sides of the building, tearing between the wooden slat siding, shattered windows reveal other flora life, \n reching towards the light of the moon.')
-        print('the door is ajar, the scene all together sends a light chill down your spine. goosebumps set in.')
+        print('you are in front of the house.')
+        time.sleep(1.5)
+        print('The steps up to the porch lead to the "front door".')
+        print('you could search the "bushes", but you really dont want to. who knows what is hiding in there.')
+        time.sleep(0.75)
+        print('around the back is the "back door", it seems to be shut, but its hard to tell with the screen loosely protecting the porch from a clear view.')
+        print('there is also a "shed" out back, locked behind a sturdy, and alarmingly new looking padlock.')
+        print('your car sits behind you in the street, prectically begging you to "leave".')
         main()
     elif choice == "help":
         help()
         print('\n \n \n')
         main()
     elif choice == "search":
-        print('you reluctantly search the property.')
         time.sleep(1.5)
-        print('The steps up to the porch lead to the "front door".')
-        print('you could search the "bushes", but you really dont want to. who knows what is hiding in there.')
-        print('around the back is the "back door", it seems to be shut, but its hard to tell with the screen loosely protecting the porch from a clear view.')
-        print('there is also a "shed" out back, locked behind a sturdy, and alarmingly new looking padlock.')
-    go_home()
+        print('behind you, your car ticks from the heat it is emitting gently in the sharp, cold air. you feel a desire to "leave".')
+        print('you are facing the front of the house, it is old, probably late 50s townhome. the white paint is peeling, revealing how cruel the years have been.')
+        print('the address on the porch support reads "6 * 6", it is impossible to read the second number as it has fallen off.')
+        print('vines and other foiage grow up the sides of the building, tearing between the wooden slat siding, shattered windows reveal other flora life, \n reching towards the light of the moon.')
+        print('the door is ajar, the scene all together sends a light chill down your spine. goosebumps set in.')
+        main()
+    elif choice == "leave":
+        print('You head back to your car. the interior now a bit more chilly than when you left it.')
+        print('the car door slams shut. you are ready to get out of here.')
+        #add more
+        go_home()
 
 #----------------------------------------------------------------------------
 
@@ -51,7 +59,6 @@ def help():
 #-----------------------------------------------------------------------------
 
 def go_home():
-    print("You decide to go home...")
     print("But should you get some food?\n")
     print("pizza.")
     print("chinese.\n")
