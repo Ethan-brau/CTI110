@@ -1,4 +1,10 @@
+import time
+
+
+#----------------------------------------------------------------------------
+
 print('\n \n')
+print('░▒▓████████▓▒░▒▓██████▓▒░░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░\n ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░\n ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░\n░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓███████▓▒░ \n ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░\n  ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░\n ░▒▓█▓▒░      ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░\n ')
 print("===\t=== Welcome to Fork! a text adventure. ===\t===")
 print('\ntype "help" at any time for help!\n')
 
@@ -6,15 +12,21 @@ def main():
     print("Choose Your Own Adventure")
     go_home()
 
+#----------------------------------------------------------------------------
+
 def check_door():
         print("There is a man at the door... open?")
         # add options and stuff
+
+#----------------------------------------------------------------------------
 
 def help():
     print("press enter after every choice to submit!")
     print('type "look" to look around')
     print('try "search" in some rooms to check for clues, or objects')
     print('type "help" at any time to see these options again!')
+
+#-----------------------------------------------------------------------------
 
 def go_home():
     print("You decide to go home...")
@@ -27,6 +39,8 @@ def go_home():
     elif choice == "chinese":
         get_chinese()
 
+#------------------------------------------------------------------------------
+
 def get_pizza():
     print("\nyou got pizza")
     print("the pizza was yummy")
@@ -38,13 +52,14 @@ def get_pizza():
     elif choice == "no":
         dont_check()
 
-   
+#--------------------------------------------------------------------------------
 
 def dont_check():
     print("you sit and enjoy your pizza, prentending noone is home.")
     print("\nwait.")
     print("\nwhat was that noise?")
-    print("(open world start...)")
+    time.sleep(2.5)
+    print("\n(open world start...)")
     choice = input()
     if choice == "look":
         print("You are in the living room.")
@@ -67,11 +82,14 @@ def dont_check():
         eat_pizza()
         print('\n')
 
+#------------------------------------------------------------------------------------------
 
 def get_chinese():
-    print("\nyou got chinese")
+    print("\nyou decide to run and get chinese...")
+    print('')
+#------------------------------------------------------------------------------------------
 
-def livingroom()
+def livingroom():
     print('you are in the livingroom\n')
     choice = input()
     if choice == "look":
@@ -91,6 +109,8 @@ def livingroom()
         livingroom()
     elif choice =="hallway":
         hallway()
+
+#------------------------------------------------------------------------------------------
 
 def hallway():
     print('You are now in the hallway.')
