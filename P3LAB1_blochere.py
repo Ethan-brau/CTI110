@@ -31,7 +31,7 @@ def main():
         time.sleep(1.5)
         print('behind you, your car ticks from the heat it is emitting gently in the sharp, cold air. you feel a desire to "leave".')
         print('you are facing the front of the house, it is old, probably late 50s townhome. the white paint is peeling, revealing how cruel the years have been.')
-        print('the address on the porch support reads "6 * 6", it is impossible to read the second number as it has fallen off.')
+        print('the address on the porch support reads "6 * 2", it is impossible to read the second number as it has fallen off.')
         print('vines and other foiage grow up the sides of the building, tearing between the wooden slat siding, shattered windows reveal other flora life, \n reching towards the light of the moon.')
         print('the door is ajar, the scene all together sends a light chill down your spine. goosebumps set in.')
         main()
@@ -40,6 +40,22 @@ def main():
         print('the car door slams shut. you are ready to get out of here.')
         #add more
         go_home()
+    elif choice == "front door":
+        front_door()
+    elif choice == "go to front door":
+        pass
+    elif choice == "back door":
+        pass
+    elif choice == "go to back door":
+        pass
+    elif choice == "shed":
+        pass
+    elif choice == "bushes":
+        pass
+    elif choice == "go to bushes":
+        pass
+    else:
+        print('I dont know what that is')
 
 #----------------------------------------------------------------------------
 
@@ -157,6 +173,19 @@ def hallway():
 def eat_pizza():
     print('You take a slice, the pizza is delicious! \nthe crust is coated in a buttery garlic sauce, the cheese is a golden brown and the sauce has a sweet, \nbut subtly spicy bite on the tip of your tongue...')
     livingroom()
+#-------------------------------------------------------------------------
+def front_door():
+    print('You are now at the front door.')
+    choice = input()
+    if choice == "look":
+        print('You are in the hallway. there is the door to the livingroom, \na doorway to the kitchen, \na door to the bathroom and a door to the bedroom.')
+        print('type "livingroom" for the livingroom. \n"kitchen" for the kitchen \n"bathroom" for bathroom and "bedroom" for bedroom.')
+    elif choice =="search":
+        print('details about hallway.')
+    elif choice == "help":
+        help()
+        print('\n \n \n')
+        hallway()
 
 main()
 
