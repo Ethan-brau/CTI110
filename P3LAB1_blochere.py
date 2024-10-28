@@ -43,19 +43,41 @@ def main():
     elif choice == "front door":
         front_door()
     elif choice == "go to front door":
-        pass
+        front_door()
     elif choice == "back door":
-        pass
+        back_door()
     elif choice == "go to back door":
-        pass
+        back_door()
     elif choice == "shed":
-        pass
+        shed_door()
+    elif choice == "go to shed":
+        shed_door()
     elif choice == "bushes":
-        pass
+        bushes()
     elif choice == "go to bushes":
-        pass
+        bushes()
     else:
         print('I dont know what that is')
+
+#----------------------------------------------------------------------------
+
+def back_door():
+    print('you are at the back door.')
+    #add details and options
+
+#----------------------------------------------------------------------------
+
+def shed_door():
+    print('you are at the door of the shed.')
+    print('\n what is the passcode?')
+    #add details and code choice
+
+    #----------------------------------------------------------------------------
+
+def bushes():
+    print('you decide to search the bushes...')
+    time.sleep(1.2)
+    #add details and hint to passcode
 
 #----------------------------------------------------------------------------
 
@@ -75,6 +97,9 @@ def help():
 #-----------------------------------------------------------------------------
 
 def go_home():
+    print('You end up deciding to go home...')
+    print('this is probably for the best.')
+    time.sleep(0.9)
     print("But should you get some food?\n")
     print("pizza.")
     print("chinese.\n")
@@ -83,6 +108,8 @@ def go_home():
         get_pizza()
     elif choice == "chinese":
         get_chinese()
+    else:
+        print('I dont know what that is')
 
 #------------------------------------------------------------------------------
 
@@ -104,7 +131,6 @@ def dont_check():
     print("\nwait.")
     print("\nwhat was that noise?")
     time.sleep(2.5)
-    print("\n(open world start...)")
     choice = input()
     if choice == "look":
         print("You are in the living room.")
@@ -178,10 +204,10 @@ def front_door():
     print('You are now at the front door.')
     choice = input()
     if choice == "look":
-        print('You are in the hallway. there is the door to the livingroom, \na doorway to the kitchen, \na door to the bathroom and a door to the bedroom.')
-        print('type "livingroom" for the livingroom. \n"kitchen" for the kitchen \n"bathroom" for bathroom and "bedroom" for bedroom.')
+        print('front door branch choices')
+        print('ex.')
     elif choice =="search":
-        print('details about hallway.')
+        print('details about front door.')
     elif choice == "help":
         help()
         print('\n \n \n')
@@ -199,9 +225,9 @@ main()
 
 #tab in for content of the "if" statement
 # choice = input("front or back?")
-# if choice =="front";
+# if choice =="front":
 #   front door code
-# elif choice =="back";
+# elif choice =="back":
 #   back door code
-# else;
+# else:
 #   print("i don't know what this is")
