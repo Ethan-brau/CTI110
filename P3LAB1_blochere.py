@@ -619,6 +619,9 @@ def bedroom_haunt():
 
 def kitchen_haunt():
     print('you are in a room in the house.')
+    key_status_haunt = ('key')
+    livingroom_haunt()
+
 
 #-------------------------------------------------------------------
 
