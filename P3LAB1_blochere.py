@@ -595,8 +595,10 @@ def hallway_haunt():
         hallway_haunt()
     elif choice == "look":
         print('in the hallway, there is a doorway to the "livingroom", a doorway to a weird "bathroom", maybe, and two more doors, one to a "bedroom" and the "other" is splintered.')
+        hallway_haunt()
     elif choice == "search":
         print('a plain hallway, very stuffy, the air is thick and there is no ventilation. it feels like if you are in this hallway any longer you might pass out.')
+        hallway_haunt()
     else:
         print('I dont know what this is.')
 
