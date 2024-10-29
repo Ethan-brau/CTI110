@@ -15,6 +15,15 @@ def main():
         print('you look at your surroundings.')
         time.sleep(1.5)
         print('you are in front of the house.')
+        print('\u00A0 \u00A0 \u00A0_|=|__________')
+        print('\u00A0 \u00A0 /              \ ')
+        print('\u00A0 \u00A0/                \ ')
+        print('\u00A0 /__________________\ ')
+        print('\u00A0 \u00A0||  || /--\ ||  ||')
+        print('\u00A0 \u00A0||[]|| | .| ||[]||')
+        print(' ()||__||_|__|_||__||()')
+        print('( )|-|-|-|====|-|-|-|( )') 
+        print('^^^^^^^^^^====^^^^^^^^^^^')
         time.sleep(1.5)
         print('The steps up to the porch lead to the "front door".')
         print('you could search the "bushes", but you really dont want to. who knows what is hiding in there.')
@@ -68,19 +77,101 @@ def main():
 
 def back_door():
     print('you are at the back door.')
-    #add details and options
-
+    choice = input()
+    if choice == "help":
+        help()
+        print('\n \n \n')
+        back_door()
+    elif choice == "look":
+        print('at the back door, you could go back around to the "front" yard or go "inside"')
+        back_door()
+    elif choice == "search":
+        print('the paint on the back porch is basically non-existent. vines and flora of all sort climb up the back of the house, the screen door is torn open, the door rotten. it seems like it is unlocked.')
+        print('the smell of decayed wood fills the air of the back porch.\n')
+        back_door()
+    elif choice == "inside":
+        dining_room_haunt()
+    elif choice == "go inside":
+        dining_room_haunt()
 #----------------------------------------------------------------------------
 
 def shed_door():
     print('you are at the door of the shed.')
     print('\n what is the passcode?')
+    time.sleep(1.5)
+    print('____________________')
+    print('____________░░░░░░░░___')
+    print('_________░░░░░░░░████▒▒__')
+    print('________░░░░░░░░░░░░▒▒██▒▒_')
+    print('_______░░░░▒▒______░░▓▓▒▒░░__')
+    print('_____░░░░░░__________░░██__░░')
+    print('_____░░░░░░____________░░▓▓____')
+    print('_____░░░░░░____________░░▓▓__▒▒')
+    print('_____░░░░░░______________░░▓▓▒▒')
+    print('_____░░░░░░______________░░▓▓▓▓')
+    print('_____░░░░░░______________░░░░░░')
+    print('_____░░░░░░______________░░░░░░')
+    print('_____░░░░░░______________░░░░░░')
+    print('_____░░░░░░______________░░░░░░')
+    print('_____░░░░░░______________░░░░░░')
+    print('_____░░░░░░______________░░░░░░')
+    print('_____░░░░░░______________░░░░░░')
+    print('_____░░░░▒▒░░░░░░________░░░░░░')
+    print('___░░▒▒▓▓▓▓▓▓▒▒▒▒░░░░____░░░░░░_')
+    print('__░░░░▒▒▒▒██▓▓▓▓▓▓▓▓▒▒░░░░░░░░░░_')
+    print('__░░░░░░▒▒░░▒▒▓▓▓▓▓▓░░░░░░░░░░░░░░_____')
+    print('_░░░░░░░░▒▒░░░░░░░░░░░░░░░░▒▒░░░░░░░░░░__')
+    print('_░░░░░░░░▒▒░░▒▒░░░░░░░░░░░░▓▓▒▒░░▒▒░░░░░░')
+    print('_░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓░░░░░░__')
+    print('_░░░░░░░░░░░░░░░░░░░░░░░░▒▒░░░░░░░░░░░░░░░░_')
+    print('░░░░░░░░░░░░░░▒▒░░░░▒▒░░░░░░░░░░░░░░__░░░░░░')
+    print('_░░░░░░░░░░▒▒▒▒▒▒▓▓▒▒░░░░░░░░░░░░░░░░░░░░░░')
+    print('_░░░░░░░░░░▒▒▒▒▒▒░░▓▓▒▒░░░░░░░░__░░░░░░░░░░')
+    print('_░░░░░░░░░░▒▒▓▓▒▒░░▒▒▓▓░░░░░░░░░░____░░░░░░')
+    print('_░░▒▒░░░░░░░░▓▓▓▓░░▓▓▓▓▒▒░░░░░░░░░░░░░░░░░░')
+    print('_░░░░░░░░░░░░░░▓▓▓▓▒▒▒▒░░░░░░░░░░░░░░░░░░░░')
+    print('_░░░░░░░░░░░░░░░░▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░')
+    print('_░░░░░░░░░░░░░░░░░░░░░░░░▒▒░░░░░░░░░░░░░░░░░░')
+    print('_░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░')
+    print('_░░░░░░░░░░░░░░░░▓▓▒▒░░░░░░░░░░░░░░____░░░░░░░░')
+    print('_░░░░░░▓▓▒▒░░░░▒▒▓▓░░▒▒▓▓▒▒░░░░░░░░________░░')
+    print('_░░░░░░▒▒░░▒▒░░░░██▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░')
+    print('_░░░░░░▓▓░░▓▓░░░░░░▒▒▒▒░░░░▓▓▒▒__░░▒▒▒▒▓▓░░░░')
+    print('_░░░░░░▓▓▒▒░░░░░░░░░░▒▒░░░░▒▒▓▓__░░▒▒▓▓▓▓░░░░░░')
+    print('_░░░░░░▒▒▒▒▒▒░░░░░░░░░░░░▒▒▒▒░░░░░░▒▒▓▓▒▒░░░░__')
+    print('_░░░░░░░░░░▓▓░░░░▓▓▒▒░░░░▓▓▓▓░░░░░░░░░░░░░░░░░░')
+    print('_░░░░░░▓▓▒▒▒▒░░░░▓▓▒▒▒▒▒▒▓▓██▒▒░░░░░░░░░░░░░░')
+    print('_░░░░░░▒▒▓▓▓▓░░░░██▒▒░░▒▒▓▓▒▒░░░░░░░░░░░░░░░░__')
+    print('_░░░░░░██▓▓░░░░░░░░▒▒░░▒▒▓▓░░░░▒▒▒▒░░░░▓▓░░░░░░')
+    print('_░░░░░░▓▓▒▒▒▒░░░░░░░░░░▒▒░░░░░░▒▒▒▒░░░░▓▓░░░░░░')
+    print('_░░░░░░▒▒░░▒▒░░░░░░░░░░░░▓▓░░░░░░▒▒▒▒▓▓░░░░░░░░')
+    print('_░░░░░░▓▓░░▓▓░░░░▓▓▒▒░░░░▓▓▓▓░░░░░░░░░░░░░░░░')
+    print('_░░░░░░▒▒▒▒▒▒░░░░▓▓▒▒▒▒▒▒▓▓██▒▒░░░░░░░░░░░░░░')
+    print('_░░░░░░▒▒▒▒▓▓░░░░▓▓▒▒░░▒▒▓▓▓▓░░░░░░░░░░░░░░░░')
+    print('_░░░░░░▓▓▓▓▒▒░░░░░░▒▒░░▒▒▓▓░░░░▒▒▒▒░░░░▒▒░░░░')
+    print('_░░░░░░░░░░▒▒░░░░░░░░░░▒▒░░░░░░▒▒▒▒░░░░▓▓░░░░')
+    print('_░░░░░░░░░░░░░░░░░░▒▒░░░░▒▒░░░░░░▒▒░░▓▓░░░░░░')
+    print('__░░▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░')
+    print('___░░▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░')
+    print('____░░▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░')
+    print('______░░▒▒░░░░░░░░░░░░░░')
+    print('__________░░░░░░░░░')
+
     choice = input()
     if choice == "647":
         in_shed()
     elif choice == "I dont know":
         print('then figure it out.')
         shed_door()
+    elif choice == "look":
+        print('like the house, the paint is faded, and chipping. to your "back" is the path you took to get to the shed.')
+        shed_door()
+    elif choice == "help":
+        help()
+        print('\n \n \n')
+        shed_door()
+    elif choice == "back":
+        main()
     else:
         print('wrong')
         shed_door()
@@ -91,6 +182,8 @@ def bushes():
     print('you decide to search the bushes...')
     time.sleep(1.2)
     print('There is a number off of the address post. the number reads "4"')
+    time.sleep(1.2)
+    main()
 
 #----------------------------------------------------------------------------
 
@@ -392,7 +485,122 @@ def win():
     else:
         print('please choose "restart" or "quit".\n')
         win()
+
 #-------------------------------------------------------------
+
+def dining_room_haunt():
+    print('you are in the old house')
+    choice = input()
+    if choice == "look":
+        print('when you walked in, you notice the overwhelming stench of decay. in front of you is a "doorway". to your right is what you assume are the "attic" steps.')
+        print('\nsomething about this place bothers you.')
+        dining_room_haunt()
+    elif choice == "search":
+        print('the stench is almost unbearable. its a smell of decaying wood, dirt, dead animals and a subtle smell of candles.')
+        print('the appearance of this room is abyssmal, its almost too dark to see in here without your lighter.')
+        print('\nthe table in the center of the room has a pot in the center, it is covered in mold. the table looks like it would break if you breathed on it too hard.')
+        print('the small holes in the floor make walking around here a minefield, forget running if you need to leave in a pinch.')
+        dining_room_haunt()
+    elif choice == "doorway":
+        livingroom_haunt()
+    elif choice == "back door":
+        print('\n\n you decide to leave out the back door.')
+        print('this has proven to be fatal')
+        print('you were ambushed on your way out. two people, you couldnt even describe a single feature it happened so fast. they chased you back into the house as you tried to leave, you tripped and fell on one of the holes\n in the floor. you were knocked out on impact.\nand never woke up.\n both you, and noone will ever know what happened to you other than your pursuers.')
+        death()
+    elif choice == "attic steps":
+        attic()
+    elif choice == "basement":
+        basement()
+    elif choice == "help":
+        help()
+        print('\n \n \n')
+        dining_room_haunt()
+    else:
+        print('I dont know what that is.')
+
+#--------------------------------------------------------------
+
+def livingroom_haunt():
+    print('you are now in another room of the house.')
+    choice = input()
+    if choice == "help":
+        help()
+        print('\n \n \n')
+        livingroom_haunt()
+    elif choice == "look":
+        print('there is a doorway to the "hallway", there is the "front door", the "kitchen" is next to this room and another "doorway".')
+        livingroom_haunt()
+    elif choice == "search":
+        print('this room looks like an old livingroom. a really old 8-track player is decorated with a carpet of dust and a couch covered in mildew and a giant hole in the middle of the room.\n there is a moldy, rancid stench in this room.')
+        print('there is a note that reads...\n"basement... diningroom..."\n\nominous.')
+        livingroom_haunt()
+    elif choice == "hallway":
+        hallway_haunt()
+    elif choice == "front door":
+        front_door()
+    elif choice == "kitchen":
+        kitchen_haunt()
+    elif choice == "doorway":
+        dining_room_haunt()
+    else:
+        print('I dont know what this is.')
+#--------------------------------------------------------------
+
+def attic():
+    print('you are in the attic of the house.')
+
+#--------------------------------------------------------------
+
+def basement():
+    print('you are in the basement of the house.')
+    print('\nit is so dark in here. if you stay. You are likely be eaten by a grue.')
+    choice = input()
+    if choice == "back":
+        dining_room_haunt()
+    elif choice == "help":
+        print('You have been eaten by a grue.')
+        death()
+    elif choice == "look":
+        print('You have been eaten by a grue.')
+        death()
+    elif choice == "search":
+        print('You have been eaten by a grue.')
+        death()
+    else:
+        print('I dont know what this is.')
+#-----------------------------------------------------------------
+
+def bedroom_haunt():
+    print('you are in a room in the house.')
+
+#-----------------------------------------------------------------
+
+def kitchen_haunt():
+    print('you are in a room in the house.')
+
+#-------------------------------------------------------------------
+
+def bathroom_haunt():
+    print('you are in a weird bathroom.')
+
+#------------------------------------------------------------------
+
+def hallway_haunt():
+    print('you are in the hallway of the house.')
+    choice = input()
+    if choice == "help":
+        help()
+        print('\n \n \n')
+        hallway_haunt()
+    elif choice == "look":
+        print('in the hallway, there is a doorway to the "livingroom", a doorway to a weird "bathroom", maybe, and two more doors, one to a "bedroom" and the "other" is splintered.')
+    elif choice == "search":
+        print('a plain hallway, very stuffy, the air is thick and there is no ventilation. it feels like if you are in this hallway any longer you might pass out.')
+    else:
+        print('I dont know what this is.')
+
+#--------------------------------------------------------------------
 
 main()
 
@@ -402,6 +610,20 @@ main()
 
 
 
+
+
+#format (literally the same as below, just copy/paste)
+#choice = input()
+#   if choice = "help":
+#       help()
+#       print('\n \n \n')
+#       ()
+#   elif choice = "":
+#
+#   elif choice = "":
+#
+#   else:
+#       print('I dont know what this is.')
 
 
 #tab in for content of the "if" statement
