@@ -1,12 +1,15 @@
 import time
+import random
 
 key_status_haunt = ('none')
-
+key_status = ('none')
 #----------------------------------------------------------------------------
 
 print('\n \n')
 print('░▒▓████████▓▒░▒▓██████▓▒░░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░\n ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░\n ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░\n░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓███████▓▒░ \n ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░\n  ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░\n ░▒▓█▓▒░      ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░\n ')
+time.sleep(2.5)
 print("===\t=== Welcome to Fork! a text adventure. ===\t===")
+print('\ngame by Windyworks.\n')
 print('\ntype "help" at any time for help!\n')
 
 def main():
@@ -184,10 +187,15 @@ def shed_door():
 
 def bushes():
     print('you decide to search the bushes...')
-    time.sleep(1.2)
-    print('There is a number off of the address post. the number reads "4"')
-    time.sleep(1.2)
-    main()
+    diechance_bush = random.randint (1, 6)
+    if diechance_bush == 1:
+        print('there was a man in the bush.')
+        death()
+    else:
+        time.sleep(1.2)
+        print('There is a number off of the address post. the number reads "4"')
+        time.sleep(1.2)
+        main()
 
 #----------------------------------------------------------------------------
 
@@ -485,6 +493,7 @@ def win():
     print('░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░')
     print(' ░▒▓█████████████▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░')
     print('\n\n\n congrats! type restart to try another route!')
+    print('\n\nCoding by: Ethan Blocher\n')
     choice = input()
     if choice == "restart":
         main()
@@ -559,7 +568,27 @@ def livingroom_haunt():
 
 def attic():
     print('you are in the attic of the house.')
-
+    choice = input()
+    if choice == "help":
+        help()
+        print('\n \n \n')
+        attic()
+    elif choice == "look":
+        print('there are the "steps" back down to the other room. in front of you is a locked "box".')
+        attic()
+    elif choice == "search":
+        print('The attic is in relatively good shape in comparison to the rest of the house. There is a leather box on the ground in front of you, the top reads "Rellik". huh. sounds russian.\nthere is a heavy, but breathable dust in the air, there is also a warmth to the attic that the rest of the house\ndoes not exhibit. there are also an assortment of glass bottles in the corner.\nall empty.')
+        attic()
+    elif choice == "box":
+        if key_status_haunt == ('key'):
+            print('you open the box. inside is another number off the side of the house, it reads "7".')
+            attic()
+        else:
+            print('you need a key to open this')
+            attic()
+    else:
+        print('I dont know what this is.')
+        attic()
 #--------------------------------------------------------------
 
 def basement():
