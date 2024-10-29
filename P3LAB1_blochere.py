@@ -567,6 +567,7 @@ def livingroom_haunt():
 #--------------------------------------------------------------
 
 def attic():
+    global key_status_haunt
     print('you are in the attic of the house.')
     choice = input()
     if choice == "help":
