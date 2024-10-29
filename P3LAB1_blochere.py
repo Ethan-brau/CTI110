@@ -40,6 +40,7 @@ def main():
         print('the car door slams shut. you are ready to get out of here.')
         time.sleep(1.0)
         print('the car takes a minute to warm up, but after the heat is kicked in, you place your hand on the shifter and pull into drive. \n taking one last look at the house before you depart, you notice that the front door, once ajar \n is now closed. your heart beats a little faster.')
+        print('on the drive home, there is not much of note. pulling into your driveway, everything feels a little better.')
         time.sleep(0.8)
 
         go_home()
@@ -85,8 +86,20 @@ def bushes():
 #----------------------------------------------------------------------------
 
 def check_door():
-        print("There is a man at the door... open?")
-        # add options and stuff
+        print("There is a man at the door... open?\n")
+        choice = input()
+        if choice == "yes":
+            print('you open the door, the man, dressed entirely in black with his face covered by shade provided from his brimmed hat. you only have a couple of seconds\nto look at his face before you meet your end. he cuts into your belly, you suffocate on your own blood.\n\n\n')
+            death()
+        elif choice == "no":
+            print('you look through the peephole, it is a man covered in black clothing, a trench coat and hat are the most distinguishable features. his presence is threatening. you return to the living room.')
+            livingroom()
+        elif choice == "help":
+            help()
+            print('\n \n \n')
+            check_door()
+        else:
+            print('I dont know what that is')
 
 #----------------------------------------------------------------------------
 
@@ -100,8 +113,9 @@ def help():
 #-----------------------------------------------------------------------------
 
 def go_home():
-    print('You end up deciding to go home...')
-    print('this is probably for the best.')
+    print('You walk up to the door, you fumble with your keys before pressing your hand to the tarnished, brass handle.\n')
+    time.sleep(1.2)
+    print('click.\n')
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^')
     print('!77777777777777777777777777777?77???777~')
     print('!77?7777777777777777777777777777777??!7~')
@@ -177,8 +191,12 @@ def go_home():
     print('.7???????77!!:\t\t\t \t ^~~:')   
     print('.~~~^::..\t\t\t \t \t .')                                
     print('\n\n\n')
-    time.sleep(0.7)
-    print("But should you get some food?\n")
+    time.sleep(1.2)
+    print('you step inside your home, the dry warmth of your home hits your face in a violent contrast to the cold, outisde air.\n')
+    time.sleep(2.0)
+    print('your stomach growls.\n')
+    time.sleep(1.0)
+    print("Should you get some food then? what are you feeling...\n")
     print("pizza.")
     print("chinese.\n")
     choice = input()
@@ -192,8 +210,12 @@ def go_home():
 #------------------------------------------------------------------------------
 
 def get_pizza():
-    print("\nyou got pizza")
-    print("the pizza was yummy")
+    print('you call your go-to, favorite pizza place, Junimos. they will be here shortly.')
+    time.sleep(3.0)
+    print("\nthe pizza man is at the door, you tip $5 and sit inside, turning on the tv.\n")
+    time.sleep(0.5)
+    print("you take a bite, the pizza was yummy!\n")
+    time.sleep(0.5)
     print('\n*knock knock*... "but the delivery guy already came..."')
     print("\n check it out?")
     choice = input()
@@ -201,7 +223,8 @@ def get_pizza():
         check_door()
     elif choice == "no":
         dont_check()
-
+    else:
+        print('I dont know what that is')
 #--------------------------------------------------------------------------------
 
 def dont_check():
@@ -230,7 +253,8 @@ def dont_check():
     elif choice =="pizza":
         eat_pizza()
         print('\n')
-
+    else:
+        print('I dont know what that is')
 #------------------------------------------------------------------------------------------
 
 def get_chinese():
@@ -258,7 +282,8 @@ def livingroom():
         livingroom()
     elif choice =="hallway":
         hallway()
-
+    else:
+        print('I dont know what that is')
 #------------------------------------------------------------------------------------------
 
 def hallway():
@@ -273,6 +298,10 @@ def hallway():
         help()
         print('\n \n \n')
         hallway()
+    else:
+        print('I dont know what that is')
+
+#-------------------------------------------------------------------------
 
 def eat_pizza():
     print('You take a slice, the pizza is delicious! \nthe crust is coated in a buttery garlic sauce, the cheese is a golden brown and the sauce has a sweet, \nbut subtly spicy bite on the tip of your tongue...')
@@ -292,6 +321,25 @@ def front_door():
         help()
         print('\n \n \n')
         hallway()
+    else:
+        print('I dont know what that is')
+
+#------------------------------------------------------------
+
+def death()
+    print('░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░      ░▒▓███████▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░') 
+    print('░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░') 
+    print('░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░') 
+    print('\u00A0░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓██████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░') 
+    print('\t░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░') 
+    print('\t░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░') 
+    print('\t░▒▓█▓▒░    ░▒▓██████▓▒░ ░▒▓██████▓▒░       ░▒▓███████▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░')
+
+#------------------------------------------------------------
+
+
+
+#-------------------------------------------------------------
 
 main()
 
