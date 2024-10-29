@@ -1,5 +1,6 @@
 import time
 
+key_status_haunt = ('none')
 
 #----------------------------------------------------------------------------
 
@@ -593,7 +594,20 @@ def kitchen_haunt():
 
 def bathroom_haunt():
     print('you are in a weird bathroom.')
-
+    choice = input()
+    if choice == "help":
+       help()
+       print('\n \n \n')
+       bathroom_haunt()
+    elif choice == "look":
+        print('there is one door in, and out. this door goes back to the "hallway".')
+        bathroom_haunt()
+    elif choice == "search":
+        print('DETAILS')
+        bathroom_haunt()
+    else:
+        print('I dont know what this is.')
+        bathroom_haunt()
 #------------------------------------------------------------------
 
 def hallway_haunt():
@@ -604,10 +618,20 @@ def hallway_haunt():
         print('\n \n \n')
         hallway_haunt()
     elif choice == "look":
-        print('in the hallway, there is a doorway to the "livingroom", a doorway to a weird "bathroom", maybe, and two more doors, one to a "bedroom" and the "other" is splintered.')
+        print('in the hallway, there is a "doorway" to the livingroom, a doorway to a weird "bathroom", maybe, and two more doors, one to a "bedroom" and the "other" is splintered.')
         hallway_haunt()
     elif choice == "search":
         print('a plain hallway, very stuffy, the air is thick and there is no ventilation. it feels like if you are in this hallway any longer you might pass out.')
+        hallway_haunt()
+    elif choice == "doorway":
+        livingroom_haunt()
+    elif choice == "bathroom":
+        bathroom_haunt()
+    elif choice == "bedroom":
+        bedroom_haunt()
+    elif choice == "other":
+        time.sleep(1.2)
+        print('the old door is splintered. between the cracks you can see a bed, some debris on the ground and a giant hole in the wall and where the ceiling was supposed to be.\n\nthere is a mass of plants and other damp organic matter hanging in the way of everything. \nthis room is totally inaccessable.')
         hallway_haunt()
     else:
         print('I dont know what this is.')
@@ -627,13 +651,13 @@ main()
 
 #format (literally the same as below, just copy/paste)
 #choice = input()
-#   if choice = "help":
+#   if choice == "help":
 #       help()
 #       print('\n \n \n')
 #       ()
-#   elif choice = "":
+#   elif choice == "":
 #
-#   elif choice = "":
+#   elif choice == "":
 #
 #   else:
 #       print('I dont know what this is.')
@@ -647,3 +671,6 @@ main()
 #   back door code
 # else:
 #   print("i don't know what this is")
+
+#some notes: 
+#the haunted house is almost, but not quite finished. The "home" path needs a lot of work.
