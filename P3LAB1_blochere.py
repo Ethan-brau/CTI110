@@ -176,7 +176,8 @@ def go_home():
     print('.7?7!!7??????^\t\t\t \t ~77^')   
     print('.7???????77!!:\t\t\t \t ^~~:')   
     print('.~~~^::..\t\t\t \t \t .')                                
-
+    print('\n\n\n')
+    time.sleep(0.7)
     print("But should you get some food?\n")
     print("pizza.")
     print("chinese.\n")
