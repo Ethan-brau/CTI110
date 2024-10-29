@@ -31,7 +31,7 @@ def main():
         time.sleep(1.5)
         print('behind you, your car ticks from the heat it is emitting gently in the sharp, cold air. you feel a desire to "leave".')
         print('you are facing the front of the house, it is old, probably late 50s townhome. the white paint is peeling, revealing how cruel the years have been.')
-        print('the address on the porch support reads "6 * 2", it is impossible to read the second number as it has fallen off.')
+        print('the address on the porch support reads "6 - -", it is impossible to read the second or third numbers as they have fallen off.')
         print('vines and other foiage grow up the sides of the building, tearing between the wooden slat siding, shattered windows reveal other flora life, \n reching towards the light of the moon.')
         print('the door is ajar, the scene all together sends a light chill down your spine. goosebumps set in.')
         main()
@@ -62,6 +62,7 @@ def main():
         bushes()
     else:
         print('I dont know what that is')
+        main()
 
 #----------------------------------------------------------------------------
 
@@ -74,14 +75,22 @@ def back_door():
 def shed_door():
     print('you are at the door of the shed.')
     print('\n what is the passcode?')
-    #add details and code choice
+    choice = input()
+    if choice == "647":
+        in_shed()
+    elif choice == "I dont know":
+        print('then figure it out.')
+        shed_door()
+    else:
+        print('wrong')
+        shed_door()
 
     #----------------------------------------------------------------------------
 
 def bushes():
     print('you decide to search the bushes...')
     time.sleep(1.2)
-    #add details and hint to passcode
+    print('There is a number off of the address post. the number reads "4"')
 
 #----------------------------------------------------------------------------
 
@@ -100,6 +109,7 @@ def check_door():
             check_door()
         else:
             print('I dont know what that is')
+            check_door()
 
 #----------------------------------------------------------------------------
 
@@ -114,7 +124,7 @@ def help():
 
 def go_home():
     print('You walk up to the door, you fumble with your keys before pressing your hand to the tarnished, brass handle.\n')
-    time.sleep(1.2)
+    time.sleep(4.5)
     print('click.\n')
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^')
     print('!77777777777777777777777777777?77???777~')
@@ -206,6 +216,7 @@ def go_home():
         get_chinese()
     else:
         print('I dont know what that is')
+        go_home()
 
 #------------------------------------------------------------------------------
 
@@ -225,11 +236,13 @@ def get_pizza():
         dont_check()
     else:
         print('I dont know what that is')
+        get_pizza()
 #--------------------------------------------------------------------------------
 
 def dont_check():
     print("you sit and enjoy your pizza, prentending noone is home.")
     print("\nwait.")
+    time.sleep(1.0)
     print("\nwhat was that noise?")
     time.sleep(2.5)
     choice = input()
@@ -240,7 +253,7 @@ def dont_check():
     elif choice == "search":
         print('the TV is on, the volume is low...\n the dry warmth of your home brings contrast to the bitter chill outside and the cold touch your windows breathe.')
         print('the blinds are closed and you feel qite secure dispite the noises in the house. likely because of the lock on your livingroom door being dead-bolt.')
-        print('your fireplace displays its ability to warm your house. it crackles, the occasional pop of the pine being changed from structure to ash occours.')
+        print('your fireplace displays its ability to warm your house. it crackles, the occasional pop of the pine being changed from earth to ash occours.')
         print('your pizza steams, the top of the box reads "Junimos"... ')
         print('not much else of note.\n')
         livingroom()
@@ -255,11 +268,22 @@ def dont_check():
         print('\n')
     else:
         print('I dont know what that is')
+        livingroom()
 #------------------------------------------------------------------------------------------
 
 def get_chinese():
     print("\nyou decide to run and get chinese...")
-    print('')
+    time.sleep(2.5)
+    print('on the way out, you notice a van across the street. youve never seen it in the neighborhood before, so you double check to make sure youve locked your front door\nand get a move on. why has today been so creepy?...')
+    time.sleep(1.0)
+    print('the ride to your favorite chinese place, Mr. Lus, goes smooth. You order the typical seasame chicken and go home.')
+    time.sleep(1.0)
+    print('the aroma of the chicken is tempting on the ride home, but you wait with urgence. when you finally get home, you see that your front door has been opened with great force\nsplintered wood decorates the doorframe. you take a cruise to the police station as you do not have your mobile phone.')
+    print('\nthe police found evidence of a break in during your absence to get food.\n it appears that there was up to 5 people in the home at the same time. maybe by a miracle, you were gone.\n\nmysteriously, there were no fingerprints found at the scene of the crime. but instead a note.')
+    print('\n"we will get you next time."\n')
+    print('you decide to stay at a friends house tonight. maybe tomorrow you could figure out a long term solution.')
+    win()
+
 #------------------------------------------------------------------------------------------
 
 def livingroom():
@@ -272,7 +296,7 @@ def livingroom():
     elif choice == "search":
         print('the TV is on, the volume is low...\n the dry warmth of your home brings contrast to the bitter chill outside and the cold touch your windows breathe.')
         print('the blinds are closed and you feel qite secure dispite the noises in the house. likely because of the lock on your livingroom door being dead-bolt.')
-        print('your fireplace displays its ability to warm your house. it crackles, the occasional pop of the pine being changed from structure to ash occours.')
+        print('your fireplace displays its ability to warm your house. it crackles, the occasional pop of the pine being changed from earth to ash occours.')
         print('your pizza steams, the top of the box reads "Junimos"... ')
         print('not much else of note.\n')
         livingroom()
@@ -334,11 +358,40 @@ def death():
     print('\u00A0\u00A0\u00A0░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░') 
     print('\u00A0\u00A0\u00A0\u00A0░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░') 
     print('\u00A0\u00A0\u00A0░▒▓█▓▒░    ░▒▓██████▓▒░ ░▒▓██████▓▒░       ░▒▓███████▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░')
-
+    print('\n\n\n type restart to try again.')
+    choice = input()
+    if choice == "restart":
+        main()
+    if choice == "quit":
+        exit()
+    else:
+        print('please choose "restart" or "quit".\n')
+        death()
+    
 #------------------------------------------------------------
 
+def in_shed():
+    print('you are in the shed.')
 
+#-------------------------------------------------------------
 
+def win():
+    print('░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓███████▓▒░ ') 
+    print('░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░') 
+    print('░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░') 
+    print('░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░') 
+    print('░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░') 
+    print('░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░')
+    print(' ░▒▓█████████████▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░')
+    print('\n\n\n congrats! type restart to try another route!')
+    choice = input()
+    if choice == "restart":
+        main()
+    if choice == "quit":
+        exit()
+    else:
+        print('please choose "restart" or "quit".\n')
+        win()
 #-------------------------------------------------------------
 
 main()
