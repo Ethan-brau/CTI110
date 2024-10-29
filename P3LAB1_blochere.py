@@ -1,8 +1,8 @@
 import time
 import random
 
-key_status_haunt = ('none')
-key_status = ('none')
+key_status_haunt = 'none'
+key_status = 'none'
 #----------------------------------------------------------------------------
 
 print('\n \n')
@@ -569,6 +569,7 @@ def livingroom_haunt():
 def attic():
     global key_status_haunt
     print('you are in the attic of the house.')
+    print("key status haunt is", key_status_haunt)
     choice = input()
     if choice == "help":
         help()
@@ -581,7 +582,7 @@ def attic():
         print('The attic is in relatively good shape in comparison to the rest of the house. There is a leather box on the ground in front of you, the top reads "Rellik". huh. sounds russian.\nthere is a heavy, but breathable dust in the air, there is also a warmth to the attic that the rest of the house\ndoes not exhibit. there are also an assortment of glass bottles in the corner.\nall empty.')
         attic()
     elif choice == "box":
-        if key_status_haunt == ('key'):
+        if key_status_haunt == 'key':
             print('you open the box. inside is another number off the side of the house, it reads "7".')
             attic()
         else:
@@ -618,9 +619,20 @@ def bedroom_haunt():
 #-----------------------------------------------------------------
 
 def kitchen_haunt():
+    # make global available
+    global key_status_haunt
     print('you are in a room in the house.')
-    key_status_haunt = ('key')
-    livingroom_haunt()
+    print("key status is", key_status_haunt)
+    choice = input()
+    if choice == "key":
+        key_status_haunt = 'key'
+        print('you picked up the key.')
+        kitchen_haunt()
+    elif choice == "livingroom":
+        livingroom_haunt()
+    else:
+        print('i dont know what that is.')
+        kitchen_haunt()
 
 
 #-------------------------------------------------------------------
