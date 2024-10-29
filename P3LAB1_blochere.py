@@ -93,6 +93,9 @@ def back_door():
         dining_room_haunt()
     elif choice == "go inside":
         dining_room_haunt()
+    else:
+        print('I dont know what that is')
+        back_door()
 #----------------------------------------------------------------------------
 
 def shed_door():
@@ -401,6 +404,7 @@ def livingroom():
         hallway()
     else:
         print('I dont know what that is')
+        livingroom()
 #------------------------------------------------------------------------------------------
 
 def hallway():
@@ -409,14 +413,17 @@ def hallway():
     if choice == "look":
         print('You are in the hallway. there is the door to the livingroom, \na doorway to the kitchen, \na door to the bathroom and a door to the bedroom.')
         print('type "livingroom" for the livingroom. \n"kitchen" for the kitchen \n"bathroom" for bathroom and "bedroom" for bedroom.')
+        hallway()
     elif choice =="search":
         print('details about hallway.')
+        hallway()
     elif choice == "help":
         help()
         print('\n \n \n')
         hallway()
     else:
         print('I dont know what that is')
+        hallway()
 
 #-------------------------------------------------------------------------
 
@@ -518,6 +525,7 @@ def dining_room_haunt():
         dining_room_haunt()
     else:
         print('I dont know what that is.')
+        dining_room_haunt()
 
 #--------------------------------------------------------------
 
@@ -545,6 +553,7 @@ def livingroom_haunt():
         dining_room_haunt()
     else:
         print('I dont know what this is.')
+        livingroom_haunt()
 #--------------------------------------------------------------
 
 def attic():
@@ -569,6 +578,7 @@ def basement():
         death()
     else:
         print('I dont know what this is.')
+        basement()
 #-----------------------------------------------------------------
 
 def bedroom_haunt():
@@ -601,6 +611,7 @@ def hallway_haunt():
         hallway_haunt()
     else:
         print('I dont know what this is.')
+        hallway_haunt()
 
 #--------------------------------------------------------------------
 
