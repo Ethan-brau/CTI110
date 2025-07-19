@@ -1,0 +1,25 @@
+# CTI 110
+# P4HW1
+# Blocher E
+# 12/03
+
+print ("\t\t\t---WELCOME to Ethan's Xbox 360 RGH assistant !---\t\t V1.0")
+
+print ("\t\t Is this a 360 S? y/n ")
+  
+
+print ("What year was the console assembled?")
+year = int(input())
+while year < 2011:
+    print('Likely a Corona Board... let us get some more info!\t\t')
+while year > 2011:
+    print('Likely a Trinity Board... Great! let us get some more info!\t\t')
+
+
+print ("What month was the console assembled?")
+month = int(input())
+while year < 2011:
+    print('')
+   
+
+
