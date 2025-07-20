@@ -12,18 +12,23 @@ def main
   year = int(input())
   while year < 2011:
     print('Likely a Corona Board... let us get some more info!\t\t')
-    
+    month()
   while year > 2011:
     print('Likely a Trinity Board... Great! let us get some more info!\t\t')
+    month()
 
 def month
   print ("What month was the console assembled?")
   mnfmonth = int(input())
   while mnfmonth < 7:
     print('this is a corona board... what size nand? if boxed in with white lines, 4mb. if no white lines, 16mb.')
+    corona()
    while mnfmonth > 8:
     print('this is a trinity board! regardless of nand size, solder a 3k resistor to FT2K1 near the number 2 and solder the two wires accordingly')
 
+def corona
+  print('type 16 for 16mb and 4 for 4mb.')
+    if
 
    
 
